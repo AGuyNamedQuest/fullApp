@@ -10,7 +10,14 @@ module.exports = {
     config.module.rules.push({
       test: /.svg$/i,
       issuer: /.[jt]sx?$/,
-      use: ["@svgr/webpack"],
+      use: [
+              {
+                  loader: "@svgr/webpack",
+                  options: {
+                      svgo: false, // Optimization caused bugs with some of my SVGs
+                  },
+              },
+          ],
     });
 
     return config
