@@ -110,7 +110,7 @@ function Notifications(props: NotificationsProps): JSX.Element {
             {`You have 3 Project 
 Notifications`}
               </YouHave3ProjectNotif>
-          <Link1 href="#" underline="hover"  >See your notifications ></Link1>
+          <Link1 href="#" underline="hover"  >See your notifications</Link1>
         </Box>
       </QuickAccess>
     </Notifications1>
