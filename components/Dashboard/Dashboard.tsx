@@ -28,11 +28,12 @@ const TypeQuestSidebarOpen: any = styled("div")({
   position: `relative`,  
   isolation: `isolate`,  
   flexDirection: `column`,  
-  width: "100%",  
+  width: "100vw",  
   justifyContent: `flex-start`,  
   alignItems: `flex-start`,  
   padding: `0px`,  
   boxSizing: `border-box`,  
+  height: "100vh",  
 });
   
 const Page: any = styled("div")({  
