@@ -15,9 +15,18 @@
 
 
 
+
+export interface FeedbackBarProps {
+  className?: any;
+};
+
+
+
+
 export interface DashboardProps {
   className?: any;
 };
+
 
 
 
@@ -27,9 +36,11 @@ export interface PaymentCardProps {
 
 
 
+
 export interface BreadcrumbsProps {
   className?: any;
 };
+
 
 
 
@@ -39,9 +50,11 @@ export interface ProductCardProps {
 
 
 
+
 export interface NotificationsProps {
   className?: any;
 };
+
 
 
 
@@ -51,9 +64,11 @@ export interface UpcomingProps {
 
 
 
+
 export interface NavBarProps {
   className?: any;
 };
+
 
 
 
@@ -63,15 +78,11 @@ export interface ReactionProps {
 
 
 
+
 export interface SidebarProps {
   className?: any;
 };
 
-
-
-export interface FeedbackBarProps {
-  className?: any;
-};
 
 
 

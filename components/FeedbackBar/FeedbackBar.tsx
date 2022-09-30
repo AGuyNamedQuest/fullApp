@@ -26,7 +26,7 @@ const FeedbackBar1: any = styled("div")({
   position: `relative`,  
   isolation: `isolate`,  
   flexDirection: `column`,  
-  width: `1026px`,  
+  width: "100%",  
   justifyContent: `flex-start`,  
   alignItems: `flex-start`,  
   padding: `28px 38px 38px 38px`,  
