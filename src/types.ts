@@ -13,45 +13,56 @@
 *
 **********************************************************************/
 
+
 export interface PaymentCardProps {
   className?: any;
 };
+
 
 export interface BreadcrumbsProps {
   className?: any;
 };
 
+
 export interface ProductCardProps {
   className?: any;
 };
+
 
 export interface NotificationsProps {
   className?: any;
 };
 
+
 export interface UpcomingProps {
   className?: any;
 };
+
 
 export interface DashboardProps {
   className?: any;
 };
 
+
 export interface NavBarProps {
   className?: any;
 };
+
 
 export interface ReactionProps {
   className?: any;
 };
 
+
 export interface SidebarProps {
   className?: any;
 };
 
+
 export interface FeedbackBarProps {
   className?: any;
 };
+
 
 export interface SidebarRowProps {
   className?: any;
