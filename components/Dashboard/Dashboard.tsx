@@ -28,12 +28,12 @@ const TypeQuestSidebarOpen: any = styled("div")({
   position: `relative`,  
   isolation: `isolate`,  
   flexDirection: `column`,  
+  height: "100vh",  
   width: "100vw",  
   justifyContent: `flex-start`,  
   alignItems: `flex-start`,  
   padding: `0px`,  
   boxSizing: `border-box`,  
-  height: "100vh",  
 });
   
 const Page: any = styled("div")({  
@@ -46,7 +46,7 @@ const Page: any = styled("div")({
   padding: `0px`,  
   boxSizing: `border-box`,  
   alignSelf: `stretch`,  
-  height: `1079px`,  
+  flexGrow: `1`,  
   margin: `0px`,  
 });
   
@@ -148,22 +148,13 @@ const Sec2: any = styled("div")({
 });
   
 const Upcoming1: any = styled(Upcoming)(({ theme }: any) =>({  
+  flexGrow: `1`,  
   margin: `0px`,  
 }));
   
-const Padding: any = styled("div")({  
-  display: `flex`,  
-  position: `relative`,  
-  isolation: `isolate`,  
-  flexDirection: `column`,  
-  justifyContent: `flex-start`,  
-  alignItems: `flex-start`,  
-  width: `252px`,  
-  margin: `0px`,  
-});
-  
 const Notifications1: any = styled(Notifications)(({ theme }: any) =>({  
-  margin: `0px`,  
+  flexGrow: `1`,  
+  margin: `0px 0px 0px 180px`,  
 }));
   
 const Sec3: any = styled("div")({  
@@ -224,7 +215,7 @@ const EventCard: any = styled("div")({
 });
   
 const Image: any = styled("div")({  
-  backgroundImage: `url(assets/images/Dashboard_Image_3.png)`,  
+  backgroundImage: `url(assets/images/Dashboard_Image_7.png)`,  
   backgroundPosition: `center`,  
   backgroundSize: `cover`,  
   backgroundRepeat: `no-repeat`,  
@@ -318,7 +309,7 @@ const EventCard1: any = styled("div")({
 });
   
 const Image1: any = styled("div")({  
-  backgroundImage: `url(assets/images/Dashboard_Image_2.png)`,  
+  backgroundImage: `url(assets/images/Dashboard_Image_6.png)`,  
   backgroundPosition: `center`,  
   backgroundSize: `cover`,  
   backgroundRepeat: `no-repeat`,  
@@ -412,7 +403,7 @@ const EventCard2: any = styled("div")({
 });
   
 const Image2: any = styled("div")({  
-  backgroundImage: `url(assets/images/Dashboard_Image_1.png)`,  
+  backgroundImage: `url(assets/images/Dashboard_Image_5.png)`,  
   backgroundPosition: `center`,  
   backgroundSize: `cover`,  
   backgroundRepeat: `no-repeat`,  
@@ -506,7 +497,7 @@ const EventCard3: any = styled("div")({
 });
   
 const Image3: any = styled("div")({  
-  backgroundImage: `url(assets/images/Dashboard_Image.png)`,  
+  backgroundImage: `url(assets/images/Dashboard_Image_4.png)`,  
   backgroundPosition: `center`,  
   backgroundSize: `cover`,  
   backgroundRepeat: `no-repeat`,  
@@ -613,8 +604,6 @@ function Dashboard(props: DashboardProps): JSX.Element {
           </Sec1>
           <Sec2 >
             <Upcoming1   />
-            <Padding >
-            </Padding>
             <Notifications1   />
           </Sec2>
           <Sec3 >
