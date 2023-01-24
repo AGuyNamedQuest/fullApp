@@ -14,6 +14,7 @@
 
 import React from 'react';
 import { Button, Link } from '@mui/material';
+import Link from 'next/link';
 import { styled } from '@mui/material/styles';
 import Navbar from 'components/Navbar/Navbar';
 import SoEasyD from 'components/SoEasyD/SoEasyD';
@@ -2452,6 +2453,10 @@ const NeoFromQuestAiEm1: any = styled('div', {
 
 const ButtonOutlined1: any = styled(Button)({
   margin: `24px 0px 0px 0px`,
+});
+
+const ExternalLink: any = styled('a')({
+  textDecoration: `none`,
 });
 
 const CodeExport: any = styled('div', {
@@ -5695,16 +5700,18 @@ function Home(props: HomeProps): JSX.Element {
                   >
                     {`Quest enables pixel-perfect web apps with our obsessive mastery of design-to-code generation. Our platform enables product teams to build better products at lightning speed.`}
                   </NeoFromQuestAiEm>
-                  <ButtonOutlined
-                    variant="outlined"
-                    size="large"
-                    color="primary"
-                    data={data}
-                    style={{ ...ButtonOutlinedSpring }}
-                  >
-                    {' '}
-                    Sign Up Now{' '}
-                  </ButtonOutlined>
+                  <Link href="/pricing">
+                    <ButtonOutlined
+                      variant="outlined"
+                      size="large"
+                      color="primary"
+                      data={data}
+                      style={{ ...ButtonOutlinedSpring }}
+                    >
+                      {' '}
+                      Sign Up Now{' '}
+                    </ButtonOutlined>
+                  </Link>
                 </HeroSub>
               </HeroContent1>
             </HeroAll>
@@ -5939,9 +5946,11 @@ function Home(props: HomeProps): JSX.Element {
             </SoEasy>
             <LearnMore>
               <About data={data}>{`Learn more about`}</About>
-              <Link1 href="#" underline="hover" data={data}>
-                our features.
-              </Link1>
+              <Link href={'/features'} passHref>
+                <Link1 underline="hover" data={data}>
+                  our features.
+                </Link1>
+              </Link>
             </LearnMore>
           </Sec4Text1>
         </Frame1255>
@@ -5979,10 +5988,12 @@ function Home(props: HomeProps): JSX.Element {
                 ? `All component plans include a 30-day trial. `
                 : `Component plans include a 30-day trial. `}
             </NeoFromQuestAiEm1>
-            <ButtonOutlined1 variant="outlined" size="large" color="primary">
-              {' '}
-              Sign Up Now{' '}
-            </ButtonOutlined1>
+            <ExternalLink href="http:///pricing">
+              <ButtonOutlined1 variant="outlined" size="large" color="primary">
+                {' '}
+                Sign Up Now{' '}
+              </ButtonOutlined1>
+            </ExternalLink>
           </Sec4Text2>
           <CodeExport data={data}></CodeExport>
         </Frame1257>
@@ -6065,9 +6076,11 @@ your IP`}
                       ? `Visit our `
                       : `Visit our`}
                   </About1>
-                  <Link2 href="#" underline="hover" data={data}>
-                    samples page.
-                  </Link2>
+                  <Link href={'/samples'} passHref>
+                    <Link2 underline="hover" data={data}>
+                      samples page.
+                    </Link2>
+                  </Link>
                 </LearnMore1>
               </TryItHeadline1>
             </LeftSide>
@@ -6388,7 +6401,11 @@ your IP`}
                 </Company>
                 <LearnMore2 data={data}>
                   <About2 data={data}>{`Watch the`}</About2>
-                  <Link3 href="#" underline="hover" data={data}>
+                  <Link3
+                    href={'https://www.youtube.com/watch?v=QJVirLX4mHs'}
+                    underline="hover"
+                    data={data}
+                  >
                     Success Story
                   </Link3>
                 </LearnMore2>
@@ -6440,19 +6457,23 @@ your IP`}
           </ImportYourDifferen>
           <LearnMore3 data={data}>
             <About3 data={data}>{`Check out our`}</About3>
-            <Link4 href="#" underline="hover" data={data}>
-              sample projects.
-            </Link4>
+            <Link href={'/samples'} passHref>
+              <Link4 underline="hover" data={data}>
+                sample projects.
+              </Link4>
+            </Link>
           </LearnMore3>
-          <ButtonOutlined2
-            variant="outlined"
-            size="large"
-            color="primary"
-            data={data}
-          >
-            {' '}
-            Sign Up Now{' '}
-          </ButtonOutlined2>
+          <Link href="/pricing">
+            <ButtonOutlined2
+              variant="outlined"
+              size="large"
+              color="primary"
+              data={data}
+            >
+              {' '}
+              Sign Up Now{' '}
+            </ButtonOutlined2>
+          </Link>
         </Frame127>
       </DiscoverSec>
       <BtmImage data={data}>

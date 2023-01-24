@@ -18,21 +18,13 @@
 
 
 
-export interface FooterLink2Props {
-  className?: any;
-  text: any;
-}
-
-
-
-
-
 
 export interface SwitchMonthlyAnnualProps {
   className?: any;
   isAnnual: any;
   onClick: any;
 }
+
 
 
 
@@ -48,6 +40,7 @@ export interface PricingProps {
 
 
 
+
 export interface NavbarProps {
   className?: any;
 }
@@ -57,9 +50,11 @@ export interface NavbarProps {
 
 
 
+
 export interface FooterProps {
   className?: any;
 }
+
 
 
 
@@ -76,9 +71,22 @@ export interface FooterLinkProps {
 
 
 
+
+export interface FooterLink2Props {
+  className?: any;
+  text: any;
+}
+
+
+
+
+
+
+
 export interface HomeProps {
   className?: any;
 }
+
 
 
 
@@ -94,9 +102,11 @@ export interface SoEasyDProps {
 
 
 
+
 export interface SoEasyTProps {
   className?: any;
 }
+
 
 
 
@@ -112,9 +122,11 @@ export interface SoEasyMProps {
 
 
 
+
 export interface HowItWorksDProps {
   className?: any;
 }
+
 
 
 
@@ -130,6 +142,32 @@ export interface HowItWorksTProps {
 
 
 
+
 export interface HowItWorksMProps {
+  className?: any;
+}
+
+
+export interface ReactAppsProps {
+  className?: any;
+}
+
+
+export interface ProductDropProps {
+  className?: any;
+}
+
+
+export interface UseCasesDropProps {
+  className?: any;
+}
+
+
+export interface VideoProps {
+  className?: any;
+}
+
+
+export interface HtmlProps {
   className?: any;
 }

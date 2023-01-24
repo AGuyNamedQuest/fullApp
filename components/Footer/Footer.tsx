@@ -864,7 +864,7 @@ function Footer(props: FooterProps): JSX.Element {
               </Link>
               <FooterLink9 text={'Plugin for Figma'} />
               <FooterLink10 text={'XD & Sketch Users'} />
-              {false && <FooterLink11 text={'Component Templates'} />}
+              <FooterLink11 text={'Component Templates'} />
               <FooterLink12 text={'Samples'} />
               <FooterLink13 text={'Docs'} />
             </Links1>
