@@ -14,6 +14,14 @@
  **********************************************************************/
 
 
+
+export interface FooterLink2Props {
+  className?: any;
+  text: any;
+}
+
+
+
 export interface SwitchMonthlyAnnualProps {
   className?: any;
   isAnnual: any;
@@ -21,9 +29,11 @@ export interface SwitchMonthlyAnnualProps {
 }
 
 
+
 export interface PricingProps {
   className?: any;
 }
+
 
 
 export interface NavbarProps {
@@ -31,9 +41,11 @@ export interface NavbarProps {
 }
 
 
+
 export interface FooterProps {
   className?: any;
 }
+
 
 
 export interface FooterLinkProps {
@@ -42,15 +54,11 @@ export interface FooterLinkProps {
 }
 
 
-export interface FooterLink2Props {
-  className?: any;
-  text: any;
-}
-
 
 export interface HomeProps {
   className?: any;
 }
+
 
 
 export interface SoEasyDProps {
@@ -58,9 +66,11 @@ export interface SoEasyDProps {
 }
 
 
+
 export interface SoEasyTProps {
   className?: any;
 }
+
 
 
 export interface SoEasyMProps {
@@ -68,14 +78,17 @@ export interface SoEasyMProps {
 }
 
 
+
 export interface HowItWorksDProps {
   className?: any;
 }
 
 
+
 export interface HowItWorksTProps {
   className?: any;
 }
+
 
 
 export interface HowItWorksMProps {
