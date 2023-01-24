@@ -70,7 +70,7 @@ const Underline: any = animated(
 );
 
 function FooterLink2(props: FooterLink2Props): JSX.Element {
-  const { data, fns } = useFooterLink2();
+  const { data, fns } = useFooterLink2(props);
 
   const Link1Property1Default = { color: `rgba(151, 151, 151, 1)` };
   const Link1Property1Variant2 = { color: `rgba(255, 255, 255, 1)` };

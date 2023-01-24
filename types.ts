@@ -13,56 +13,70 @@
  *
  **********************************************************************/
 
+
 export interface SwitchMonthlyAnnualProps {
   className?: any;
   isAnnual: any;
   onClick: any;
 }
 
+
 export interface PricingProps {
   className?: any;
 }
+
 
 export interface NavbarProps {
   className?: any;
 }
 
+
 export interface FooterProps {
   className?: any;
 }
+
 
 export interface FooterLinkProps {
   className?: any;
   text: any;
 }
 
+
 export interface FooterLink2Props {
   className?: any;
+  text: any;
 }
+
 
 export interface HomeProps {
   className?: any;
 }
 
+
 export interface SoEasyDProps {
   className?: any;
 }
+
 
 export interface SoEasyTProps {
   className?: any;
 }
 
+
 export interface SoEasyMProps {
   className?: any;
 }
+
 
 export interface HowItWorksDProps {
   className?: any;
 }
 
+
 export interface HowItWorksTProps {
   className?: any;
 }
+
 
 export interface HowItWorksMProps {
   className?: any;
