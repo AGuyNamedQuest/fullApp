@@ -27,7 +27,7 @@ const Property1Default: any = styled('div')({
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
-  height: `24px`,
+  height: 'auto',
   width: 'fit-content',
 });
 
