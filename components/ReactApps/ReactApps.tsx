@@ -2348,20 +2348,13 @@ const LearnMore: any = styled('div', {
       : `34px 0px 0px 0px`,
 }));
 
-const LearnMore1: any = styled('div', {
+const Link3: any = styled(Link, {
   shouldForwardProp: (prop: any) => !['data'].includes(prop.toString()),
 })(({ data }: any) => ({
-  textAlign: `left`,
-  whiteSpace: `pre-wrap`,
   color: `rgba(254, 136, 136, 1)`,
   fontStyle: `normal`,
   fontFamily: `Visby CF`,
-  fontWeight:
-    data.currentVariant === 'Property1ReactPageT'
-      ? `600`
-      : data.currentVariant === 'Property1ReactPageM'
-      ? `600`
-      : `500`,
+  fontWeight: `600`,
   fontSize:
     data.currentVariant === 'Property1ReactPageT'
       ? `18px`
@@ -2369,13 +2362,7 @@ const LearnMore1: any = styled('div', {
       ? `16px`
       : `20px`,
   letterSpacing: `0.09090909361839294px`,
-  textDecoration: `none`,
-  lineHeight:
-    data.currentVariant === 'Property1ReactPageT'
-      ? `26px`
-      : data.currentVariant === 'Property1ReactPageM'
-      ? `26px`
-      : `30px`,
+  lineHeight: data.currentVariant === 'Property1ReactPageM' ? `26px` : `30px`,
   textTransform: `none`,
   margin: `0px`,
 }));
@@ -2402,12 +2389,7 @@ const About: any = styled('div', {
       : `20px`,
   letterSpacing: `0.09090909361839294px`,
   textDecoration: `none`,
-  lineHeight:
-    data.currentVariant === 'Property1ReactPageT'
-      ? `26px`
-      : data.currentVariant === 'Property1ReactPageM'
-      ? `26px`
-      : `30px`,
+  lineHeight: data.currentVariant === 'Property1ReactPageM' ? `26px` : `30px`,
   textTransform: `none`,
   margin: `0px 0px 0px 5px`,
 }));
@@ -4609,7 +4591,7 @@ const Title1: any = styled('div', {
       : 'unset',
 }));
 
-const LearnMore2: any = styled('div', {
+const LearnMore1: any = styled('div', {
   shouldForwardProp: (prop: any) => !['data'].includes(prop.toString()),
 })(({ data }: any) => ({
   display: `flex`,
@@ -4661,7 +4643,7 @@ const About1: any = styled('div', {
   margin: `0px`,
 }));
 
-const Link3: any = styled(Link, {
+const Link4: any = styled(Link, {
   shouldForwardProp: (prop: any) => !['data'].includes(prop.toString()),
 })(({ data }: any) => ({
   color: `rgba(254, 136, 136, 1)`,
@@ -5033,7 +5015,7 @@ const ImportYourDifferen14: any = styled('div', {
   width: data.currentVariant === 'Property1ReactPageT' ? `473px` : 'unset',
 }));
 
-const LearnMore3: any = styled('div')({
+const LearnMore2: any = styled('div')({
   display: `flex`,
   position: `relative`,
   isolation: `isolate`,
@@ -5078,7 +5060,7 @@ const About2: any = styled('div', {
   margin: `0px`,
 }));
 
-const Link4: any = styled(Link, {
+const Link5: any = styled(Link, {
   shouldForwardProp: (prop: any) => !['data'].includes(prop.toString()),
 })(({ data }: any) => ({
   color: `rgba(254, 136, 136, 1)`,
@@ -5485,9 +5467,9 @@ function ReactApps(props: ReactAppsProps): JSX.Element {
             <HowItWorksM1 data={data} />
           )}
           <LearnMore data={data}>
-            <LearnMore1 ref={'/features'} data={data}>
-              {`Learn more`}
-            </LearnMore1>
+            <Link3 href="#" underline="hover" data={data}>
+              Learn more
+            </Link3>
             <About data={data}>{`about our features.`}</About>
           </LearnMore>
         </Sec2Centered>
@@ -5739,16 +5721,16 @@ function ReactApps(props: ReactAppsProps): JSX.Element {
                     </Title1>
                   </Name>
                 </Company>
-                <LearnMore2 data={data}>
+                <LearnMore1 data={data}>
                   <About1 data={data}>{`Watch the`}</About1>
-                  <Link3
+                  <Link4
                     href={'https://www.youtube.com/watch?v=QJVirLX4mHs'}
                     underline="hover"
                     data={data}
                   >
                     Success Story
-                  </Link3>
-                </LearnMore2>
+                  </Link4>
+                </LearnMore1>
               </CustomerQuote1>
             </LeftSide>
           </Text>
@@ -5785,18 +5767,18 @@ function ReactApps(props: ReactAppsProps): JSX.Element {
           <ImportYourDifferen14 data={data}>
             {`The low-code movement is helping companies of all sizes remove redundant work. Quest enables you to build bold software products, faster and true to design.`}
           </ImportYourDifferen14>
-          <LearnMore3>
+          <LearnMore2>
             <About2 data={data}>
               {data.currentVariant === 'Property1ReactPageT'
                 ? `Check out our `
                 : `Check out our`}
             </About2>
             <Link href={'/samples'} passHref>
-              <Link4 underline="hover" data={data}>
+              <Link5 underline="hover" data={data}>
                 sample projects.
-              </Link4>
+              </Link5>
             </Link>
-          </LearnMore3>
+          </LearnMore2>
         </Frame127>
       </DiscoverSec>
       <JoinUs data={data}>

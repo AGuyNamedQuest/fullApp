@@ -11,23 +11,22 @@
  **********************************************************************/
 
 import React from 'react';
-import usePricingResponsiveSize from './usePricingResponsiveSize';
+import useWebsiteResponsiveSize from './useWebsiteResponsiveSize';
 
 //These are the possible values for the current variant. Use this to change the currentVariant dynamically.
 //Please don't modify
 const variantOptions = {
-  screendesktop: 'screendesktop',
-  screentablet: 'screentablet',
-  screenmobile: 'screenmobile',
+  Property1HTMLD: 'Property1HTMLD',
+  Property1HTMLT: 'Property1HTMLT',
+  Property1HTMLM: 'Property1HTMLM',
 };
 
-const usePricing = () => {
-  const toggleAnnualMonthly = (param1: any): any => {};
+const useWebsite = () => {
   const [currentVariant, setCurrentVariant] = React.useState<string>(
-    variantOptions['screendesktop']
+    variantOptions['Property1HTMLD']
   );
 
-  const breakpointsVariant = usePricingResponsiveSize();
+  const breakpointsVariant = useWebsiteResponsiveSize();
 
   React.useEffect(() => {
     if (breakpointsVariant !== currentVariant) {
@@ -37,8 +36,8 @@ const usePricing = () => {
 
   let data: any = { currentVariant };
 
-  let fns: any = { setCurrentVariant ,toggleAnnualMonthly};
+  let fns: any = { setCurrentVariant };
   return { data, fns };
 };
 
-export default usePricing;
+export default useWebsite;

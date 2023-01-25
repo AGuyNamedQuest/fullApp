@@ -338,24 +338,13 @@ const MonthlyOrAnnual: any = styled('div', {
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
-  width:
-    data.currentVariant === 'screentablet'
-      ? 'unset'
-      : data.currentVariant === 'screenmobile'
-      ? 'unset'
-      : `1440px`,
+  alignSelf: `stretch`,
   margin:
     data.currentVariant === 'screentablet'
       ? `30px 0px 0px 0px`
       : data.currentVariant === 'screenmobile'
       ? `30px 0px 0px 0px`
       : `40px 0px 0px 0px`,
-  alignSelf:
-    data.currentVariant === 'screentablet'
-      ? `stretch`
-      : data.currentVariant === 'screenmobile'
-      ? `stretch`
-      : 'unset',
 }));
 
 const SignupSwitch: any = styled('div', {
@@ -407,9 +396,14 @@ const PriceCards: any = styled('div', {
       ? `0px 32px`
       : `0px 180px`,
   boxSizing: `border-box`,
-  alignSelf: data.currentVariant === 'screentablet' ? 'unset' : `stretch`,
+  alignSelf: `stretch`,
   margin: `20px 0px 0px 0px`,
-  width: data.currentVariant === 'screentablet' ? `768px` : 'unset',
+  minWidth:
+    data.currentVariant === 'screentablet'
+      ? `unset`
+      : data.currentVariant === 'screenmobile'
+      ? `unset`
+      : `1408px`,
 }));
 
 const PriceCard: any = styled('div', {
@@ -431,12 +425,7 @@ const PriceCard: any = styled('div', {
       : data.currentVariant === 'screenmobile'
       ? `30px 30px 10px 30px`
       : `30px 40px`,
-  width:
-    data.currentVariant === 'screentablet'
-      ? `205px`
-      : data.currentVariant === 'screenmobile'
-      ? 'unset'
-      : `333px`,
+  flexGrow: data.currentVariant === 'screenmobile' ? 'unset' : `1`,
   height:
     data.currentVariant === 'screentablet'
       ? 'unset'
@@ -985,12 +974,7 @@ const PriceCard1: any = styled('div', {
       : data.currentVariant === 'screenmobile'
       ? `30px 30px 10px 30px`
       : `30px 40px`,
-  width:
-    data.currentVariant === 'screentablet'
-      ? `206px`
-      : data.currentVariant === 'screenmobile'
-      ? 'unset'
-      : `334px`,
+  flexGrow: data.currentVariant === 'screenmobile' ? 'unset' : `1`,
   height:
     data.currentVariant === 'screentablet'
       ? 'unset'
@@ -1547,12 +1531,7 @@ const PriceCard2: any = styled('div', {
       : data.currentVariant === 'screenmobile'
       ? `30px 30px 10px 30px`
       : `30px 40px`,
-  width:
-    data.currentVariant === 'screentablet'
-      ? `205px`
-      : data.currentVariant === 'screenmobile'
-      ? 'unset'
-      : `333px`,
+  flexGrow: data.currentVariant === 'screenmobile' ? 'unset' : `1`,
   height:
     data.currentVariant === 'screentablet'
       ? 'unset'
@@ -2103,30 +2082,19 @@ const Banner: any = styled('div', {
       ? `0px 32px`
       : `0px 180px 19px 180px`,
   boxSizing: `border-box`,
+  alignSelf: `stretch`,
   height:
     data.currentVariant === 'screentablet'
       ? 'unset'
       : data.currentVariant === 'screenmobile'
       ? 'unset'
       : `161px`,
-  width:
-    data.currentVariant === 'screentablet'
-      ? 'unset'
-      : data.currentVariant === 'screenmobile'
-      ? 'unset'
-      : `1440px`,
   margin:
     data.currentVariant === 'screentablet'
       ? `30px 0px 0px 0px`
       : data.currentVariant === 'screenmobile'
       ? `30px 0px 0px 0px`
       : `40px 0px 0px 0px`,
-  alignSelf:
-    data.currentVariant === 'screentablet'
-      ? `stretch`
-      : data.currentVariant === 'screenmobile'
-      ? `stretch`
-      : 'unset',
 }));
 
 const SpecialPricing: any = styled('div', {
@@ -2144,7 +2112,7 @@ const SpecialPricing: any = styled('div', {
   isolation: `isolate`,
   flexDirection: data.currentVariant === 'screenmobile' ? `column` : `row`,
   justifyContent:
-    data.currentVariant === 'screenmobile' ? `center` : `flex-start`,
+    data.currentVariant === 'screenmobile' ? `center` : `space-between`,
   alignItems: data.currentVariant === 'screenmobile' ? `flex-start` : `center`,
   padding:
     data.currentVariant === 'screentablet'
@@ -2153,14 +2121,8 @@ const SpecialPricing: any = styled('div', {
       ? `30px`
       : `26px 40px`,
   boxSizing: `border-box`,
-  width:
-    data.currentVariant === 'screentablet'
-      ? `688px`
-      : data.currentVariant === 'screenmobile'
-      ? 'unset'
-      : `1080px`,
+  flexGrow: `1`,
   margin: `0px`,
-  flexGrow: data.currentVariant === 'screenmobile' ? `1` : 'unset',
 }));
 
 const TheProblem: any = styled('div', {
@@ -2180,8 +2142,8 @@ const TheProblem: any = styled('div', {
       : data.currentVariant === 'screenmobile'
       ? 'unset'
       : `793px`,
-  margin: `0px`,
   alignSelf: data.currentVariant === 'screenmobile' ? `stretch` : 'unset',
+  margin: data.currentVariant === 'screenmobile' ? `0px` : 'unset',
 }));
 
 const TheProblem1: any = styled('div', {
@@ -2261,11 +2223,8 @@ const ButtonOutlined3: any = styled(Button, {
       : data.currentVariant === 'screenmobile'
       ? 'unset'
       : `175px`,
-  margin:
-    data.currentVariant === 'screenmobile'
-      ? `16px 0px 0px 0px`
-      : `0px 0px 0px 32px`,
   alignSelf: data.currentVariant === 'screenmobile' ? `stretch` : 'unset',
+  margin: data.currentVariant === 'screenmobile' ? `16px 0px 0px 0px` : 'unset',
 }));
 
 const BuildReact: any = styled('div', {
@@ -2478,6 +2437,12 @@ const SecLogos: any = styled('div', {
       : data.currentVariant === 'screenmobile'
       ? `30px 0px 0px 0px`
       : `40px 0px 0px 0px`,
+  minWidth:
+    data.currentVariant === 'screentablet'
+      ? `unset`
+      : data.currentVariant === 'screenmobile'
+      ? `unset`
+      : `1408px`,
 }));
 
 const TopLogoDivider: any = styled('div')({
@@ -4089,7 +4054,7 @@ const Footer1: any = styled(Footer, {
 }));
 
 function Pricing(props: PricingProps): JSX.Element {
-  const { data } = usePricing();
+  const { data, fns } = usePricing();
 
   return (
     <ScreenDesktop data={data}>
@@ -4125,7 +4090,10 @@ No Credit Card required to start.`}
         )}
         <MonthlyOrAnnual data={data}>
           <SignupSwitch data={data}>
-            <SwitchMonthlyAnnual1 />
+            <SwitchMonthlyAnnual1
+              onClick={fns.toggleAnnualMonthly}
+              isAnnual={data.isAnnual}
+            />
           </SignupSwitch>
           <PriceCards data={data}>
             <PriceCard data={data}>
